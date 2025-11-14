@@ -39,7 +39,7 @@ class UserRegistrationRequest extends FormRequest
     protected function prepareForValidation()
     {
         $this->merge([
-            'role' => $this->input('role', UserRoleEnum::USER->value),
+            'role' => $this->input('role', UserRoleEnum::CUSTOMER->value),
         ]);
     }
 }
